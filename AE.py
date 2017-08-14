@@ -73,12 +73,13 @@ def train(epoch):
 	model.train()
 	train_loss = 0
 	for batch_idx, (data, _) in enumerate(train_loader):
+		
 		data = data.view(-1, 784)
 		data = np.absolute(np.fft.fft(data.numpy()))
+		data = data/np.max(data)
 		data = Variable(torch.FloatTensor(data))
-		print data[0].view(784,-1)
-		break
-
+		
+		#data = Variable(data)
 		optimizer.zero_grad()
 		output = model(data)
 		loss = loss_function(output, data)
@@ -99,9 +100,18 @@ def test(epoch):
 	model.eval()
 	test_loss = 0
 	for data, _ in test_loader:
-		data = Variable(data, volatile=True)
+		image = data
+		data = data.view(-1, 784)
+		FFT = np.fft.fft(data.numpy())
+		data = np.absolute(FFT)
+		theta = np.angle(FFT)
+		data = data/np.max(data)
+		data = Variable(torch.FloatTensor(data))
+		
+		#data = Variable(data, volatile=True)
 		output = model(data)
-		test_loss += loss_function(output, data).data[0]
+		recon_image = np.absolute(np.fft.ifft(output.data.numpy()*np.exp(1j*theta)))
+		test_loss += loss_function(recon_image, image).data[0]
 
 	test_loss /= len(test_loader.dataset)
 	print('====> Test set loss: {:.4f}'.format(test_loss))
@@ -109,5 +119,4 @@ def test(epoch):
 
 for epoch in range(20):
     train(epoch)
-    break
     test(epoch)
