@@ -59,7 +59,7 @@ local trainer = nn.StochasticGradient(model,criterion)
 trainer.learningRate = 0.02
 trainer.learningRateDecay = 0.001
 trainer.shuffleIndices = 0
-trainer.maxIteration = 30
+trainer.maxIteration = 20
 batchSize = 300;
 
 collectgarbage()
@@ -93,7 +93,7 @@ while true do
 		currentError_ = currentError_ + currentError*batchSize;
  		model2:updateGradInput(filter_output, criterion:updateGradInput(model2:forward(filter_output), target))
  		model2:accUpdateGradParameters(filter_output, criterion.gradInput, currentLearningRate)
- 		if (t%1==0) then 
+ 		if (t%100==0) then 
  			print("batch "..t.." done ==>"); 
  		end
  		collectgarbage()
@@ -147,7 +147,8 @@ for i=1,teSize do
     local filters = torch.Tensor(numFilters)
     local temp = model:forward(example)
     for filter_iter = 1,numFilters do
-    	filters[filter_iter] = temp[filter_iter]:mean()
+    	--filters[filter_iter] = temp[filter_iter]:mean()
+        filters[filter_iter] = WeightedMean(temp[filter_iter],groundtruth,modifiedWeightsTensor)
     end
     class_size[groundtruth] = class_size[groundtruth] +1
     local prediction = model2:forward(filters)
