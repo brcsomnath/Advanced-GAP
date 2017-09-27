@@ -6,12 +6,12 @@ Newer GAP - Using average excitation level of filter as weight for heatmap gener
 
 <img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers4.jpg" width="300"> <img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers4_thresh_mask.jpg" width="300"> <br>
 
-<img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers5.jpg" width="300"> <img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers5_thresh.jpg" width="300"> <br>
+<img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers5.png" width="300"> <img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers5_thresh.jpg" width="300"> <br>
 
 
-<img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers6.jpg" width="300"> <img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers6_threshs.jpg" width="300"> <br>
+<img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers6.jpg" width="300"> <img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers6_thresh.jpg" width="300"> <br>
 
-<img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers7.jpg" width="300"> <img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers7_thresh_mask.jpg" width="300"> <br>
+<img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers7.png" width="300"> <img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers7_thresh_mask.jpg" width="300"> <br>
 
 <img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers8.jpg" width="300"> <img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers8_thresh_mask.jpg" width="300"> <br>
 
