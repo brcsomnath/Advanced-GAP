@@ -4,8 +4,7 @@ Original GAP - Follow http://cnnlocalization.csail.mit.edu/Zhou_Learning_Deep_Fe
 Modified GAP - Using classification error change in absence of filter as weight for heatmap generation <br />
 Newer GAP - Using average excitation level of filter as weight for heatmap generation <br />
 
-<img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers4.jpg" width="300">
-<img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers4_thresh_mask.jpg" width="300"> <br>
+<img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers4.jpg" width="300"><img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers4_thresh_mask.jpg" width="300"> <br>
 
 <img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers5.jpg" width="300">
 <img src="https://raw.githubusercontent.com/brcsomnath/Advanced-GAP/master/Results/numbers5_thresh.jpg" width="300"> <br>
