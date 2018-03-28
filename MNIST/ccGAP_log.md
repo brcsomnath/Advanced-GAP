@@ -27,5 +27,4 @@ nn.Sequential { <br/>
   (10): nn.View(288)<br/>
   (11): nn.Linear(288 -> 10)<br/>
   (12): nn.LogSoftMax<br/>
-}
----
+  }
