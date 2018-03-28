@@ -1,6 +1,6 @@
 # Training a network on MNIST ->
 ## Testing accuracy
-Overall correct 9878 percentage correct98.78 % 	
+Overall correct 9878 percentage correct98.78 %
 0	98.877551020408 % 
 
 1	99.383259911894 % 	
